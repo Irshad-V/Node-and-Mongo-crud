@@ -6,7 +6,7 @@ const app = express();
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 app.use("/api/user", router);
-app.use("/", blogRouter)
+app.use("/api/blogs", blogRouter)
 const db = "mongodb://127.0.0.1:27017/blog"
 
 try {
@@ -22,3 +22,4 @@ app.listen(5000, () => {
 })
 
 
+  

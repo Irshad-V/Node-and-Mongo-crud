@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const Schema = mongoose;
+const Schema = mongoose.Schema;
 
 
 const BlogSchema = new Schema({
@@ -16,14 +16,14 @@ const BlogSchema = new Schema({
     image: {
         type: String,
         required: true,
-       
+
     },
     user: {
         type: String,
         required: true,
-       
-    },
+
+    }, 
 
 })
 
-module.exports =BlogSchema;
+module.exports = mongoose.model("blogs", BlogSchema)

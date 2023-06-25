@@ -74,7 +74,7 @@ const login = async (req, res, next) => {
             .status(404)
             .json({ message: "password incorrect" })
     } return res.status(200)
-        .json({ message: existingUser.name +"  "+ "is  logged successfully" })
+        .json({ message: existingUser.name + "  " + "is  logged successfully" })
 
 }
 
