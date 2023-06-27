@@ -77,6 +77,7 @@ const getByid = async (req, res, next) => {
         return res.status(400).json({ message: "no document availabe with this id,correct the id " })
     }
     return res.status(200).json({ blog })
+   
 }
 
 const DeltebyId = async (req, res, next) => {
